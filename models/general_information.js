@@ -28,6 +28,10 @@ let generalInfoSchema = new Schema({
     dlNumber: {
         type: Number
       },
+    clientID: {
+        type: Number, 
+        required: true
+    }
     
   }, {
     collection: 'generalInformation'
