@@ -30,6 +30,10 @@ let residentInfoSchema = new Schema({
     singleParent: {
         type: String
     },
+    clientID: {
+      type: Number, 
+      required: true
+  }
     
     
   }, {

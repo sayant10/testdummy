@@ -42,6 +42,10 @@ let contactInfoSchema = new Schema({
     deliveryDateInMonths: {
         type: Number
     },
+    clientID: {
+        type: Number, 
+        required: true
+    }
   }, {
     collection: 'contactInformation'
 });
