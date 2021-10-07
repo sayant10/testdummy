@@ -5,16 +5,16 @@ require("dotenv").config(); // setting up the module that allows the connection 
  
 const app = express();
 
-//import the schema models for the three collections
+//Import the schema models for the three collections
 let contactInfoModel = require('./models/contact_information');
 let generalInfoModel = require('./models/general_information');
 let residentInfoModel = require('./models/resident_information');
 
-// accessing the HTTP request as req.body and logging incoming request to console
+// Accessing the HTTP request as req.body and logging incoming request to console
 app.use(express.json());
 app.use(morgan("dev"));
 
-// the database connection set up using mongoose
+// The database connection set up using mongoose
 mongoose
   .connect(process.env.MONGO_URL) // connection string read from .env file
   .then(() => {
